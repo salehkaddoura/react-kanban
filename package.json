@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "alt": "^0.18.2",
+    "alt-container": "^1.0.2",
     "alt-utils": "^1.0.0",
     "babel-plugin-syntax-class-properties": "^6.5.0",
     "babel-plugin-syntax-decorators": "^6.5.0",

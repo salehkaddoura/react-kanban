@@ -29,7 +29,7 @@ export default class Note extends React.Component {
     	// This would allow us to use the underlyig DOM API through `this.refs.input`.
     	// This can be useful when combined with React lifecycle hooks
 
-    	return <input type="text" ref={ (e) => e ? e.selectionStart = this.props.task.length : null } autoFocus={true} defaultValue={this.props.task} onBlur={this.finishEdit} onKeyPress={this.checkEnter} />
+    	return <input type="text" ref={ (e) => e ? e.selectionStart = this.props.task.length : null } autoFocus={true} defaultValue={this.props.task} onBlur={this.finishEdit} onKeyPress={this.checkEnter} />;
 
     };
 
@@ -57,6 +57,7 @@ export default class Note extends React.Component {
     };
 
     checkEnter = (e) => {
+        console.log('sup')
     	// The user hits *enter*
     	if (e.key === 'Enter') {
     		this.finishEdit(e);

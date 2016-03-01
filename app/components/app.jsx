@@ -13,7 +13,7 @@ export default class App extends React.Component {
 			<div>
 				<button className="add-lane" onClick={this.addLane}>+</button>
 
-				<AltContainer stores={[LaneStore]} inject={{ lanes: () => LaneStore.getState().lanes || [] }}>
+				<AltContainer stores={[LaneStore]} inject={{ lanes: () => LaneStore.getState().lanes || [] }}>				
 					<Lanes />
 				</AltContainer>
 			</div>
@@ -24,3 +24,4 @@ export default class App extends React.Component {
 		LaneActions.create({ name: 'New lane'});
 	}
 }
+
